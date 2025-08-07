@@ -1,6 +1,5 @@
 # Address to Coordinates Mapping
-# Generated from 6 addresses
-# Success rate: 100.00%
+# Generated from 6 addresses - Success rate: 100.00%
 address_coordinates = {
   "Jumia- Pargo- Pickup station - Cairo, Egypt": "30.0443879,31.2357257",
   "Point 192 - Alexandria, Egypt": "44.8349533,8.7450304",
