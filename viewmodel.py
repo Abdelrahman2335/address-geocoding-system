@@ -1,6 +1,6 @@
 """
 View Model - handles business logic and state management
-Similar to ViewModel/Controller in Flutter MVVM
+Coordinates between data models and user interface
 """
 from typing import List, Optional, Dict, Any
 import pandas as pd
@@ -14,7 +14,7 @@ from services import FileService, CacheService, GeocodingService
 class GeocodingViewModel:
     """
     Main ViewModel for geocoding operations
-    Like a Cubit/Bloc or ChangeNotifier in Flutter
+    Manages application state and business logic
     """
     
     def __init__(self, config: GeocodingConfig):

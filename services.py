@@ -1,6 +1,6 @@
 """
 Services layer - handles external API calls and data operations
-Similar to repository pattern in Flutter
+Implements service patterns for clean architecture
 """
 import pandas as pd
 import json
@@ -13,7 +13,7 @@ from models import Address, GeocodingConfig
 
 
 class FileService:
-    """Handles file operations - like file_service.dart in Flutter"""
+    """Handles file operations for the application"""
     
     @staticmethod
     def load_csv(file_path: str) -> pd.DataFrame:
@@ -46,7 +46,7 @@ class FileService:
 
 
 class CacheService:
-    """Handles caching operations - like cache_service.dart in Flutter"""
+    """Handles caching operations for performance optimization"""
     
     def __init__(self, cache_file: str):
         self.cache_file = cache_file
@@ -87,7 +87,7 @@ class CacheService:
 
 
 class GeocodingService:
-    """Handles geocoding API calls - like geocoding_service.dart in Flutter"""
+    """Handles geocoding API calls and address processing"""
     
     def __init__(self, config: GeocodingConfig, cache_service: CacheService):
         self.config = config

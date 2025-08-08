@@ -1,5 +1,5 @@
 """
-Utility functions - like utils.dart in Flutter
+Utility functions for the geocoding application
 Helper functions that don't belong to specific services
 """
 import time
@@ -9,7 +9,7 @@ import sys
 
 
 class Logger:
-    """Simple logger utility - like logger.dart in Flutter"""
+    """Simple logger utility for application messaging"""
     
     @staticmethod
     def info(message: str) -> None:
@@ -56,7 +56,7 @@ class Timer:
 
 
 class Formatter:
-    """Formatting utilities - like formatters.dart in Flutter"""
+    """Formatting utilities for data presentation"""
     
     @staticmethod
     def format_duration(seconds: float) -> str:
@@ -97,7 +97,7 @@ class Formatter:
 
 
 class Validator:
-    """Validation utilities - like validators.dart in Flutter"""
+    """Validation utilities for data integrity"""
     
     @staticmethod
     def is_valid_email(email: str) -> bool:

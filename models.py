@@ -1,6 +1,6 @@
 """
 Models for the geocoding system
-Contains data classes similar to Flutter models
+Contains data classes for the application
 """
 from dataclasses import dataclass
 from typing import Optional, List, Dict, Any
@@ -8,7 +8,7 @@ from typing import Optional, List, Dict, Any
 
 @dataclass
 class Address:
-    """Address model - like a Dart class with fields"""
+    """Address model - represents an address with coordinates"""
     original: str
     cleaned: str
     latitude: Optional[float] = None
@@ -27,7 +27,7 @@ class Address:
         return None
     
     def to_dict(self) -> Dict[str, Any]:
-        """Convert to dictionary - like toJson() in Flutter"""
+        """Convert to dictionary format"""
         return {
             'original': self.original,
             'cleaned': self.cleaned,
@@ -63,7 +63,7 @@ class ProcessingStats:
 
 @dataclass
 class GeocodingConfig:
-    """Configuration model - like app config in Flutter"""
+    """Configuration model for geocoding settings"""
     batch_size: int = 1000
     cache_file: str = "geocoding_cache.pkl"
     max_workers: int = 5

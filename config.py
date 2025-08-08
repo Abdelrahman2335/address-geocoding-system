@@ -1,6 +1,6 @@
 """
 Configuration manager - handles app settings
-Like a config.dart file in Flutter
+Centralized configuration management for the application
 """
 import os
 from dataclasses import dataclass, asdict
@@ -45,7 +45,7 @@ class FileConfig:
 
 @dataclass
 class AppConfig:
-    """Main application configuration - like app_config.dart in Flutter"""
+    """Main application configuration settings"""
     api: APIConfig
     database: DatabaseConfig
     processing: ProcessingConfig
